@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Optionally clear the form fields after submission
         form.reset();
     });
-    
+    const exampleJsonData = '{"name":"Imported Watch","price":150,"category":"Accessories","discountRate":20}';
     addProductFromJson(exampleJsonData);  // Valid JSON
 
     const invalidJsonData = '{"name":"Broken Item","price":200';  // Invalid JSON
