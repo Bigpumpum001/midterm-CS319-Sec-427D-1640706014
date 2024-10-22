@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <script src="product.js"></script>
+    <script src="DiscountedProduct.js"></script>
+    <script src="customer.js"></script>
+    <script src="inventory.js"></script>
+    <script src="priceFunctions.js"></script> <!-- Load Higher-order function for tax -->
+    <script src="fetchData.js"></script> <!-- Load the async fetch function -->
+    <script src="arrayMethods.js"></script> <!-- Load array methods -->
+    <script src="errorHandling.js"></script> <!-- Load error handling script -->
+    <script src="domManipulation.js"></script> <!-- Load DOM manipulation script -->
+</head>
+<body>
+    <h1>Product Form</h1>
+    <form id="productForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" ><br>
+
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" ><br>
+
+        <label for="productCategory">Product Category:</label>
+        <input type="text" id="productCategory" ><br>
+
+        <label for="productDiscount">Discount Rate (%):</label>
+        <input type="number" id="productDiscount" ><br>
+
+        <button type="submit">Add Product</button>
+    </form>
+    <h2>Array Methods</h2>
+    <button id="filterButton">Show Products Priced Above 100</button>
+    <button id="namesButton">Show Product Names</button>
+    <button id="totalCostButton">Show Total Cost of Products</button>
+    <h2>Customer Information</h2>
+    <p id="customerInfo"></p> <!-- This will display the customer's info -->
+    <h2>Product inventory</h2>
+    
+    <table id="productTable" border="1">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Original Price</th>
+                <th>Discount (%)</th>
+                <th>Final Price</th>
+                <th>Final Price (with Tax)</th> <!-- Added column for price with tax -->
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
